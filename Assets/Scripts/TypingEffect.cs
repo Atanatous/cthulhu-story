@@ -7,7 +7,6 @@ public class TypingEffect : MonoBehaviour
 {
   // Start is called before the first frame update
   private Text textComponent;
-  private string subText = "";
   private string originText = "";
   public bool isFinished = false;
 
