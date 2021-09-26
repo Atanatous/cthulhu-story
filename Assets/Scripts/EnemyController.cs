@@ -6,30 +6,19 @@ using UnityEngine.SceneManagement;
 public class EnemyController : MonoBehaviour
 {
 
-    public GameObject pannel;
+  public string enemyName;
+  public int hp;
+  public int attack;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  // Start is called before the first frame update
+  void Start()
+  {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  }
 
-    void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("Collide!");
-        StartCoroutine(LoadSceneAfterTranstion());
-    }
+  // Update is called once per frame
+  void Update()
+  {
 
-    private IEnumerator LoadSceneAfterTranstion() {
-        Animator animator = pannel.GetComponent<Animator>();
-        animator.SetBool("animateOut", true);
-
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("BattleScene");
-    }
+  }
 }
